@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CirclePages｜WASEAD</title>
+    <meta name="viewport" content="width=1000px, user-scalable=no">
+    <link rel="stylesheet" href="./css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/functins.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <div id="inner-header" class="clearfix">
+        <h1 class="site-title">WASEAD<span>Circle Pages</span></h1>
+        <p class="sub-site-title">早稲田大学サークル情報ポータル</p>
+      </div>
+    </header>
+
+    <div id="breadcrumb-wrapper">
+      <ol id="breadcrumb-lists" class="clearfix">
+        <li class="breadcrumb-list"><a href="#">Home</a></li>
+        <li class="breadcrumb-list"><a href="#">Circle</a></li>
+        <li class="breadcrumb-list"><a href="#">SHOCKERS</a></li>
+      </ol>
+    </div>
+
+    <div id="main-visual-wapper">
+      <ul id="top_slider" class="clearfix">
+        <li class="slider_item"><img src="./img/shockers.jpg" alt="" height="100%"></li>
+        <li class="slider_item"><img src="./img/shockers.jpg" alt="" height="100%"></li>
+        <li class="slider_item"><img src="./img/shockers.jpg" alt="" height="100%"></li>
+      </ul>
+    </div>
+
+    <div id="circle_name_wrapper">
+      <h1 id="circle_name">SHOCKERS</h1>
+    </div>
+
+    <div id="content_nav_wrapper">
+      <div id="content_nav_inner_wrapper">
+        <ul id="content_nav" class="clearfix">
+          <li><a href="#news_wapper">ニュース</a></li>
+          <li><a href="#activity_wapper">活動内容</a></li>
+          <li><a href="#profile_wapper">基本情報</a></li>
+          <li><a href="#events_wapper">イベント情報</a></li>
+          <li><a href="#relatedposts_wapper">関連投稿</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="main_wrapper">
+
+      <section id="news_wapper">
+        <h2 class="section_title">ニュース</h2>
+        <ul id="news_items">
+          <li class="news_item clearfix">
+            <div class="news_date">
+              <p class="day">04</p>
+              <p class="month">JUNE</p>
+              <p class="year">2017</p>
+            </div>
+            <div class="news_content content">
+              この度SHOCKERS FESTIVAL2017の開催が決定しました！去年よりパワーアップした
+              ショカフェスを是非見に来てください！<a href="#">チケット購入画面はこちら</a>
+            </div>
+          </li>
+          <li class="news_item clearfix">
+            <div class="news_date">
+              <p class="day">05</p>
+              <p class="month">JUNE</p>
+              <p class="year">2015</p>
+            </div>
+            <div class="news_content content">
+              2015年5月にアメリカ、ヴァージニアビーチにて開催されたThe U.S.Finals,
+              Collegiate Coed部門に出場し、優勝することが出来ました！
+              <a href="#">こちらがその演技です。（Youtube）</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="activity_wapper">
+        <h2 class="section_title">活動内容</h2>
+        <div class="activity_content content">
+          こんにちは、僕たち早稲田大学男子チアリーディングチームSHOCKERSは男だけでチアリーディングをしている世界的にも珍しいチームです。
+          男子ならではの迫力のある技、仲間と一緒に必死にバカをできるところが魅力です。
+          活動内容としては、秋4回の練習を基本にイベントに出演したり、体育各部の応援を行ったりなどします。
+          今年は沖縄国際映画祭で演技をしてきました！自分が動けばどんなイベントにも出ることができる可能性を持っていると思います。
+          また春に行われる大会、SHOCKERSSTAGEという大隈講堂を使用しての自主公演なども行っております。
+          アニメ化もされ今後さらなる期待が高まっていくことが予想されます。男のチアというものを広めていくべく日々がんばっています☆！！
+        </div>
+      </section>
+
+      <section id="profile_wapper">
+        <h2 class="section_title">基本情報</h2>
+        <ul>
+          <li class="daytowork"></li>
+          <li class="numberofmember"></li>
+          <li class="established"></li>
+          <li class="contact"></li>
+        </ul>
+        <table>
+        	<tr>
+        		<th scope="row" class="daytowork">活動日時</th>
+        		<td>毎週月曜日・水曜日・金曜日・日曜日/18時・19時/都内の体育館</td>
+        	</tr>
+        	<tr>
+        		<th scope="row" class="numberofmember">所属人数</th>
+        		<td>56人（男50人/女6人）</td>
+        	</tr>
+        	<tr>
+        		<th scope="row" class="established">設立年</th>
+        		<td>2004年</td>
+        	</tr>
+        	<tr>
+        		<th scope="row" class="contact">代表連絡先</th>
+        		<td>shockers@gmail.com</td>
+        	</tr>
+        </table>
+      </section>
+
+      <section id="events_wapper">
+        <h2 class="section_title">イベント情報</h2>
+        <ul class="event_cards_wapper">
+          <li class="event_card card">
+            <div class="event_header">
+              <h2 class="event_title">SHOCKERS STAGE 2017</h2>
+              <p class="event_date">2017月6月30日（日） 17：30〜20：00</p>
+              <p class="event_place">早稲田大学 大隈記念講堂</p>
+            </div>
+            <div class="event_body content">
+              <p>イベント内容</p>
+              <p>SHOCKERSによるチアリーディングのパフォーマンス、学生団体によるパフォーマンス等</p>
+              </br>
+              <p>当日席</p>
+              <p>当日席は200席ご用意しています。人数に達し次第締め切ってしまうので、
+              当日来ていただいてもご覧いただけない可能性がありますことを御了承ください。
+              また、当日席での入場は17時以降からお待ちいただけます。
+              17時以降に来てくださった方から順に並んでお待ちいただく形となります。
+              それより早く来ていただいても席を確保することはできません。
+              また、送迎バスの運行の妨げともなってしまいますので、どうぞご協力お願いします。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="relatedposts_wapper">
+        <h2 class="section_title">関連投稿</h2>
+        <ul class="relatedposts_wapper clearfix">
+          <li class="relatedpost card">
+            <div class="relatedpost_image">
+              <img src="./img/shockers1.jpg" alt="" width="100%">
+            </div>
+            <p class="relatedpost_title">
+              壮絶すぎる！！ショッカーズに体験入会してみたらウォーミングアップで倒れた。
+            </p>
+          </li>
+          <li class="relatedpost card">
+            <div class="relatedpost_image">
+              <img src="./img/shockers2.jpg" alt="" width="100%">
+            </div>
+            <p class="relatedpost_title">
+              【ショッカーズ・ワセフラ・ブリピン】文芸祭2017を楽しむ5つのコツ
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="fotter_ad">
+      <svg version="1.1" id="ad_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      	 y="0px" viewBox="0 0 143.6 280.4" style="enable-background:new 0 0 143.6 280.4;" xml:space="preserve">
+      <style type="text/css">
+      	.st0{fill:#E6E6E6;}
+      	.st1{fill:#FF0000;}
+      	.st2{fill:#FFFFFF;}
+      	.st3{font-family:'NotoSansCJKjp-Bold-83pv-RKSJ-H';}
+      	.st4{font-size:29.367px;}
+      	.st5{fill:#575959;}
+      	.st6{fill:#383635;}
+      </style>
+      <filter id="drop-shadow">
+        <!-- 図形の影をSourceAlphaで取得、ぼかす-->
+        <feGaussianBlur in="SourceAlpha" stdDeviation="5"></feGaussianBlur>
+      </filter>
+      <path id="hand" class="st0" d="M124.2,219l-44.5-52.1L9.1,118.7c-3.9-2.6-9.1,0.1-9.1,4.8v84.2c0,0-0.7,19.1,17.2,31.3v41.4h82
+      	v-31.6C105.6,242.8,115.5,232.4,124.2,219z"/>
+      <g id="sp">
+      	<path id="sp_x5F_body" d="M109.6,1h-3.4V0h-20v1H32.5c-8.7,0-16.3,6.8-16.3,15.5v197c0,8.7,7.6,15.6,16.3,15.6h77.1
+      		c8.7,0,15.6-6.8,15.6-15.6v-197C125.2,7.8,118.3,1,109.6,1z"/>
+      	<path id="sp_x5F_shadow" filter="url(#drop-shadow)" d="M109.6,1h-3.4V0h-20v1H32.5c-8.7,0-16.3,6.8-16.3,15.5v197c0,8.7,7.6,15.6,16.3,15.6h77.1
+      		c8.7,0,15.6-6.8,15.6-15.6v-197C125.2,7.8,118.3,1,109.6,1z"/>
+      	<rect id="sp_x5F_display" x="18.8" y="21.8" class="st1" width="104.2" height="185.1"/>
+      	<text id="sp_x5F_text" transform="matrix(1 0 0 1 52.1705 122.708)" class="st2 st3 st4">CP</text>
+      	<g id="sp_x5F_button">
+      		<circle id="XMLID_1_" class="st5" cx="70.9" cy="217.4" r="7.6"/>
+      		<circle id="XMLID_2_" cx="70.9" cy="217.2" r="7.4"/>
+      	</g>
+      	<path id="sp_x5F_mic" class="st6" d="M78.7,16.6H63.2c-0.7,0-1.2-0.5-1.2-1.2v0c0-0.7,0.5-1.2,1.2-1.2h15.5c0.7,0,1.2,0.5,1.2,1.2
+      		v0C79.9,16,79.3,16.6,78.7,16.6z"/>
+      </g>
+      <path id="middle_x5F_finger" class="st0" d="M115.3,123.7l7.4-7.4c4.8-4.8,12.5-4.8,17.3,0l0,0c4.8,4.8,4.8,12.5,0,17.3l-7.4,7.4
+      	c-4.8,4.8-12.5,4.8-17.3,0l0,0C110.5,136.2,110.5,128.5,115.3,123.7z"/>
+      <path id="ring_x5F_finger" class="st0" d="M115.3,159.1l7.4-7.4c4.8-4.8,12.5-4.8,17.3,0l0,0c4.8,4.8,4.8,12.5,0,17.3l-7.4,7.4
+      	c-4.8,4.8-12.5,4.8-17.3,0l0,0C110.5,171.6,110.5,163.9,115.3,159.1z"/>
+      <path id="pinkey_x5F_finger" class="st0" d="M115.3,194l7.4-7.4c4.8-4.8,12.5-4.8,17.3,0l0,0c4.8,4.8,4.8,12.5,0,17.3l-7.4,7.4
+      	c-4.8,4.8-12.5,4.8-17.3,0l0,0C110.5,206.5,110.5,198.8,115.3,194z"/>
+      </svg>
+      <p id="fotter_ad_copy">ダサいホームページはもういらない。</p>
+      <p id="fotter_site-title">WASEAD<span>Circle Pages</span></p>
+      <a id="register" href="#">今すぐ登録</a>
+    </div>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+      smart_header();
+    });
+
+    </script>
+  </body>
+</html>

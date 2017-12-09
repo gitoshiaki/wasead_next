@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+/*
+=================================
+全体（reset）
+=================================
+*/
+
+*{
+  font-family: 'Roboto', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 1000px;
+  background: hsla(0, 0%, 95%, 1);
+}
+
+body, h1, h2, p, ol, ul {
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.content a{
+  text-decoration: underline;
+  color: blue;
+}
+
+ol,ul{
+  list-style: none;
+  padding: 0;
+}
+
+.content{
+  line-height: 1.9em;
+}
+
+.card{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 2px;
+  cursor: pointer;
+  background: white;
+}
+
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#main_wrapper{
+  padding-bottom: 5rem;
+}
+
+/*
+=================================
+ヘッダー
+=================================
+*/
+
+header {
+    display: block;
+    height: 90px;
+    background: black;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
+}
+
+#inner-header {
+    width: 900px;
+    margin: auto;
+    height: inherit;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.site-title {
+    float: left;
+    line-height: 90px;
+}
+
+.site-title span {
+    font-weight: 100;
+    margin-left: .5rem;
+    color: red;
+}
+
+.sub-site-title {
+    float: left;
+    line-height: 90px;
+    margin-left: 1rem;
+    color: dimgrey;
+}
+
+/*
+=================================
+パンくずリスト
+=================================
+*/
+
+#breadcrumb-wrapper {
+    background: hsla(180, 25%, 14%, 1);
+}
+
+#breadcrumb-lists {
+    width: 900px;
+    margin: 0 auto;
+    padding: .5rem 0;
+    color: white;
+    opacity: .4;
+    font-weight: lighter;
+}
+
+.breadcrumb-list {
+    float: left;
+}
+
+.breadcrumb-list:not(:first-child):before {
+    content: "＞";
+    margin: .5rem;
+}
+
+/*
+=================================
+メインビジュアル
+=================================
+*/
+
+#main-visual-wapper {
+  position: relative;
+    overflow: hidden;
+    height: 60vh;
+}
+
+#main-visual-wapper:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#top_slider {
+    position: relative;
+    display: block;
+    width: 300vw;
+    height: 100%;
+    transition: ease .5s;
+    right: 0vw;
+}
+
+.slider_item {
+    float: left;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    background: black;
+}
+
+/*
+=================================
+サークル名
+=================================
+*/
+
+#circle_name_wrapper {
+    height: 4rem;
+    background: rgba(255, 0, 0, 1);
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
+}
+
+#circle_name {
+    position: relative;
+    display: block;
+    color: white;
+    top: -3.5rem;
+    font-size: 5rem;
+    width: 900px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+/*
+=================================
+コンテンツナビ
+=================================
+*/
+
+#content_nav_wrapper,
+#content_nav_inner_wrapper {
+    background : rgba(193, 39, 45, 1);
+    line-height: 4rem;
+    height: 4rem;
+    width: 100%;
+}
+
+#content_nav_inner_wrapper.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#content_nav {
+    color: white;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#content_nav>li {
+    float: left;
+}
+
+#content_nav>li:not(:first-child) {
+    margin-left: 5rem;
+}
+
+/*
+=================================
+セクション
+=================================
+*/
+
+section {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: darkslategrey;
+}
+
+.section_title {
+    font-weight: 100;
+    font-size: 2rem;
+    color: darkslategrey;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+/*
+=================================
+ニュース
+=================================
+*/
+
+.news_item:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.news_item>div{
+  float: left;
+}
+
+.news_date {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 1px solid darkslategrey;
+    border-radius: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-weight: 100;
+    color: darkslategrey;
+}
+
+.day {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.news_content {
+    width: 700px;
+    padding-left: 3rem;
+    padding-top: 1em;
+}
+
+.news_item:not(:first-child) .news_date:before {
+    content: "";
+    height: 3rem;
+    margin-top: -2px;
+    width: 0;
+    border: inherit;
+    top: -3rem;
+    position: absolute;
+}
+
+/*
+=================================
+プロフィール
+=================================
+*/
+
+table {
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+table th {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+table td {
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+/*
+=================================
+イベント情報
+=================================
+*/
+
+.event_card {
+    display: block;
+}
+
+.event_card:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.event_card>* {
+    padding: 2rem;
+}
+
+.event_header {
+    background: rgba(255, 0, 0, 1);
+    color: white;
+    background: -webkit-gradient(
+      linear, left top, right bottom,
+      from(red),
+      to(violet));
+    background: linear-gradient(
+  	to right bottom,
+  	red 0%,
+  	violet 100%
+  );
+    /* background: -webkit-gradient(linear, left top, right bottom, color-stop(0.100, hsla(0, 100%, 40%, 1)), color-stop(0.101, red)); */
+}
+
+.event_title {
+    font-size: 2rem;
+    margin-bottom: .3em;
+}
+
+.event_date, .event_place {
+    opacity: .8;
+}
+
+.event_date {
+    margin-bottom: .5em;
+}
+
+/*
+=================================
+関連投稿
+=================================
+*/
+
+.relatedpost {
+    width: 300px;
+    float: left;
+}
+
+.relatedpost:not(:first-child) {
+    margin-left: 3rem;
+}
+
+.relatedpost_image {
+    height: 170px;
+    overflow: hidden;
+}
+
+.relatedpost_title {
+    padding: 1em;
+    font-size: .9em;
+    min-height: 7em;
+}
+
+/*
+=================================
+フッター広告
+=================================
+*/
+
+#fotter_ad {
+    display: block;
+    position: relative;
+    height: 400px;
+    background: rgba(255, 0, 0, 1);
+    padding-top: 10%;
+    padding-left: 45%;
+    color: white;
+    overflow: hidden;
+}
+
+#fotter_ad_copy {
+    font-weight: 100;
+}
+
+#fotter_site-title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+#fotter_site-title span{
+  color: black;
+  font-weight: lighter;
+  margin-left: .5rem;
+}
+
+#register {
+    display: block;
+    border: 1px solid white;
+    width: 11rem;
+    text-align: center;
+    line-height: 3em;
+    margin-top: 2rem;
+}
+
+svg#ad_icon {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    right: 60%;
+    padding-top: 10px;
+}
+
+#sp_x5F_shadow{
+  fill: none;
+    stroke: #55452D;
+    stroke-width: 2px;
+    stroke-miterlimit: 10;
+    box-sizing: border-box;
+}
